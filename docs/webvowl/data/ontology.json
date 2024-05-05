@@ -1,0 +1,660 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PremiumEconomy",
+      "undefined" : "PremiumEconomy"
+    },
+    "comment" : {
+      "undefined" : "Indicates medium seat category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DatePublished",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DatePublished",
+      "undefined" : "DatePublished"
+    },
+    "comment" : {
+      "undefined" : "Date when the score was published."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "comment" : {
+      "undefined" : "Numerical value from 1 to 10 that indicates the score given by the traveler."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CoupleLeisure",
+      "undefined" : "CoupleLeisure"
+    },
+    "comment" : {
+      "undefined" : "Indicates that it is a couple traveling."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "en" : "Aircraft"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Boeing_737",
+      "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+      "comment" : {
+        "undefined" : "Name and model of the aircraft"
+      },
+      "labels" : {
+        "IRI-based" : "Boeing_737",
+        "undefined" : "Boeing_737"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Indicates the model and the name of the aircraft."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Title",
+      "undefined" : "Title"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/my_review",
+      "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+      "comment" : {
+        "undefined" : "Title of the comment"
+      },
+      "labels" : {
+        "IRI-based" : "my_review"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Indicates the title of the comment."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Origin",
+      "undefined" : "Origin"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Madrid",
+      "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+      "comment" : {
+        "undefined" : "Origin of the travel"
+      },
+      "labels" : {
+        "IRI-based" : "Madrid",
+        "undefined" : "Madrid"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Place from which the trip departs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FamilyLeisure",
+      "undefined" : "FamilyLeisure"
+    },
+    "comment" : {
+      "undefined" : "Indicates that is is a family trip with their kids."
+    },
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TypeOfTraveller",
+      "undefined" : "TypeOfTraveller"
+    },
+    "subClasses" : [ "18", "17", "19", "9" ],
+    "comment" : {
+      "undefined" : "Indicates the purpose of the traveler's trip."
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EconomyClass",
+      "undefined" : "EconomyClass"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomySeat",
+      "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+      "comment" : {
+        "undefined" : "Low priced seat"
+      },
+      "labels" : {
+        "IRI-based" : "EconomySeat",
+        "undefined" : "Economy Seat"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Indicates the lowest seat category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "22",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Destination",
+      "undefined" : "Destination"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Barcelona",
+      "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+      "comment" : {
+        "undefined" : "Destination of the travel"
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona",
+        "undefined" : "Barcelona"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Final travel destination."
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Comment"
+    },
+    "subClasses" : [ "15", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatType",
+      "undefined" : "SeatType"
+    },
+    "subClasses" : [ "0", "22", "28" ],
+    "comment" : {
+      "undefined" : "Indicates the category of seat to be used by the traveler."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DateFlown",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateFlown",
+      "undefined" : "DateFlown"
+    },
+    "comment" : {
+      "undefined" : "Indicate the day on which the trip took place."
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Country",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Country",
+      "undefined" : "Country"
+    },
+    "comment" : {
+      "undefined" : "Indicates the traveler's country."
+    },
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FirstClass",
+      "undefined" : "FirstClass"
+    },
+    "comment" : {
+      "undefined" : "Indicates highest seat category"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoloLeisure",
+      "undefined" : "SoloLeisure"
+    },
+    "comment" : {
+      "undefined" : "Indicates that the traveler is flying alone."
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Body",
+      "undefined" : "Body"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings#This_travel_has_been_a_nightmare,_Would_not_recommend_it!",
+      "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+      "comment" : {
+        "undefined" : "Body of the comment"
+      },
+      "labels" : {
+        "IRI-based" : "This_travel_has_been_a_nightmare,_Would_not_recommend_it!"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Indicates the comment left by the traveler after giving the rating."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TripVerified",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TripVerified",
+      "undefined" : "TripVerified"
+    },
+    "comment" : {
+      "undefined" : "Indicates whether the comment comes from a real traveller."
+    },
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Business",
+      "undefined" : "Business"
+    },
+    "comment" : {
+      "undefined" : "Indicates that the trip has a business purpose."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Recommended",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommended",
+      "undefined" : "Recommended"
+    },
+    "comment" : {
+      "undefined" : "It indicates whether the traveler recommends the airline / travel or not."
+    },
+    "attributes" : [ "external" ],
+    "id" : "46"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "37",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "42",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasAircraftName"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasRatingEqualTo10",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasRatingEqualTo10"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "6"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "10",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "10",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "1",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "range" : "10",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "1",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "0",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "9",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasComment",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasComment"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "32"
+  }, {
+    "range" : "17",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "17",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "19",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "19",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "37"
+  }, {
+    "range" : "28",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "0",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "hasAircraftName"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype", "external", "allValues" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasSeat",
+    "baseIri" : "http://www.semanticweb.org/ramon/ontologies/2024/3/ratings",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasSeat"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "44"
+  } ]
+}

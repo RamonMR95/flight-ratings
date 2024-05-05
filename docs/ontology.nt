@@ -1,0 +1,246 @@
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasComment
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body> .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasSeat
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasSeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasSeat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasSeat> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasRatingEqualTo10
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasRatingEqualTo10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasRatingEqualTo10> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasRatingEqualTo10> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the model and the name of the aircraft." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft"@en .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the comment left by the traveler after giving the rating." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body> <http://www.w3.org/2000/01/rdf-schema#label> "Body" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the trip has a business purpose." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business> <http://www.w3.org/2000/01/rdf-schema#label> "Business" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Country
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the traveler's country." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that it is a couple traveling." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "CoupleLeisure" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DateFlown
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DateFlown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DateFlown> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicate the day on which the trip took place." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "DateFlown" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DatePublished
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DatePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the score was published." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DatePublished> <http://www.w3.org/2000/01/rdf-schema#label> "DatePublished" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination> <http://www.w3.org/2000/01/rdf-schema#comment> "Final travel destination." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination> <http://www.w3.org/2000/01/rdf-schema#label> "Destination" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the lowest seat category." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass> <http://www.w3.org/2000/01/rdf-schema#label> "EconomyClass" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that is is a family trip with their kids." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "FamilyLeisure" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates highest seat category" .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass> <http://www.w3.org/2000/01/rdf-schema#label> "FirstClass" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin> <http://www.w3.org/2000/01/rdf-schema#comment> "Place from which the trip departs." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin> <http://www.w3.org/2000/01/rdf-schema#label> "Origin" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates medium seat category." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy> <http://www.w3.org/2000/01/rdf-schema#label> "PremiumEconomy" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Numerical value from 1 to 10 that indicates the score given by the traveler." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Recommended
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates whether the traveler recommends the airline / travel or not." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Recommended> <http://www.w3.org/2000/01/rdf-schema#label> "Recommended" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the category of seat to be used by the traveler." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType> <http://www.w3.org/2000/01/rdf-schema#label> "SeatType" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the traveler is flying alone." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure> <http://www.w3.org/2000/01/rdf-schema#label> "SoloLeisure" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the title of the comment." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title> <http://www.w3.org/2000/01/rdf-schema#label> "Title" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TripVerified
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TripVerified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TripVerified> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the comment comes from a real traveller." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TripVerified> <http://www.w3.org/2000/01/rdf-schema#label> "TripVerified" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the purpose of the traveler's trip." .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller> <http://www.w3.org/2000/01/rdf-schema#label> "TypeOfTraveller" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings#This_travel_has_been_a_nightmare,_Would_not_recommend_it!
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings#This_travel_has_been_a_nightmare,_Would_not_recommend_it!> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings#This_travel_has_been_a_nightmare,_Would_not_recommend_it!> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings#This_travel_has_been_a_nightmare,_Would_not_recommend_it!> <http://www.w3.org/2000/01/rdf-schema#comment> "Body of the comment" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Barcelona
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Barcelona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Barcelona> <http://www.w3.org/2000/01/rdf-schema#comment> "Destination of the travel" .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Barcelona> <http://www.w3.org/2000/01/rdf-schema#label> "Barcelona" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Boeing_737
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Boeing_737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Boeing_737> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Boeing_737> <http://www.w3.org/2000/01/rdf-schema#comment> "Name and model of the aircraft" .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Boeing_737> <http://www.w3.org/2000/01/rdf-schema#label> "Boeing_737" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomySeat
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomySeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomySeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomySeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Low priced seat" .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomySeat> <http://www.w3.org/2000/01/rdf-schema#label> "Economy Seat" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Madrid
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Madrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Origin of the travel" .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Madrid> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid" .
+# 
+# http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/my_review
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/my_review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/my_review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title> .
+<http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/my_review> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the comment" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid2 <http://www.w3.org/2002/07/owl#members> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

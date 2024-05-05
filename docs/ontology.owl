@@ -1,0 +1,421 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings#"
+     xml:base="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasComment -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasComment">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasSeat -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasSeat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasRatingEqualTo10 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasRatingEqualTo10">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/hasAircraftName"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Indicates the model and the name of the aircraft.</rdfs:comment>
+        <rdfs:label xml:lang="en">Aircraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment"/>
+        <rdfs:comment>Indicates the comment left by the traveler after giving the rating.</rdfs:comment>
+        <rdfs:label>Body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller"/>
+        <rdfs:comment>Indicates that the trip has a business purpose.</rdfs:comment>
+        <rdfs:label>Business</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Country -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Country">
+        <rdfs:comment>Indicates the traveler&apos;s country.</rdfs:comment>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller"/>
+        <rdfs:comment>Indicates that it is a couple traveling.</rdfs:comment>
+        <rdfs:label>CoupleLeisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DateFlown -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DateFlown">
+        <rdfs:comment>Indicate the day on which the trip took place.</rdfs:comment>
+        <rdfs:label>DateFlown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DatePublished -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/DatePublished">
+        <rdfs:comment>Date when the score was published.</rdfs:comment>
+        <rdfs:label>DatePublished</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination">
+        <rdfs:comment>Final travel destination.</rdfs:comment>
+        <rdfs:label>Destination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType"/>
+        <rdfs:comment>Indicates the lowest seat category.</rdfs:comment>
+        <rdfs:label>EconomyClass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller"/>
+        <rdfs:comment>Indicates that is is a family trip with their kids.</rdfs:comment>
+        <rdfs:label>FamilyLeisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType"/>
+        <rdfs:comment>Indicates highest seat category</rdfs:comment>
+        <rdfs:label>FirstClass</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin">
+        <rdfs:comment>Place from which the trip departs.</rdfs:comment>
+        <rdfs:label>Origin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType"/>
+        <rdfs:comment>Indicates medium seat category.</rdfs:comment>
+        <rdfs:label>PremiumEconomy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Rating">
+        <rdfs:comment>Numerical value from 1 to 10 that indicates the score given by the traveler.</rdfs:comment>
+        <rdfs:label>Rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Recommended -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Recommended">
+        <rdfs:comment>It indicates whether the traveler recommends the airline / travel or not.</rdfs:comment>
+        <rdfs:label>Recommended</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SeatType">
+        <rdfs:comment>Indicates the category of seat to be used by the traveler.</rdfs:comment>
+        <rdfs:label>SeatType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller"/>
+        <rdfs:comment>Indicates that the traveler is flying alone.</rdfs:comment>
+        <rdfs:label>SoloLeisure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Comment"/>
+        <rdfs:comment>Indicates the title of the comment.</rdfs:comment>
+        <rdfs:label>Title</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TripVerified -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TripVerified">
+        <rdfs:comment>Indicates whether the comment comes from a real traveller.</rdfs:comment>
+        <rdfs:label>TripVerified</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/TypeOfTraveller">
+        <rdfs:comment>Indicates the purpose of the traveler&apos;s trip.</rdfs:comment>
+        <rdfs:label>TypeOfTraveller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings#This_travel_has_been_a_nightmare,_Would_not_recommend_it! -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings#This_travel_has_been_a_nightmare,_Would_not_recommend_it!">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Body"/>
+        <rdfs:comment>Body of the comment</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Barcelona -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Destination"/>
+        <rdfs:comment>Destination of the travel</rdfs:comment>
+        <rdfs:label>Barcelona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Boeing_737 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Boeing_737">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Aircraft"/>
+        <rdfs:comment>Name and model of the aircraft</rdfs:comment>
+        <rdfs:label>Boeing_737</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomySeat -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomySeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass"/>
+        <rdfs:comment>Low priced seat</rdfs:comment>
+        <rdfs:label>Economy Seat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Madrid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Madrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Origin"/>
+        <rdfs:comment>Origin of the travel</rdfs:comment>
+        <rdfs:label>Madrid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/my_review -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/my_review">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Title"/>
+        <rdfs:comment>Title of the comment</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/Business"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/CoupleLeisure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FamilyLeisure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/SoloLeisure"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/EconomyClass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/FirstClass"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ramon/ontologies/2024/3/ratings/PremiumEconomy"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
